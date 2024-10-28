@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Menu</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .menu-item {
+      background-color: #ccc;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 5px;
+      width: calc(33.333% - 20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .menu-item h2 {
+      background-color: #e57373;
+      padding: 10px;
+      margin-bottom: 15px;
+      color: white;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .menu-item:nth-child(2) h2 {
+      background-color: #d32f2f;
+    }
+
+    .menu-item:nth-child(3) h2 {
+      background-color: #fbc02d;
+    }
+
+    .menu-item p {
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .menu-item {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Menu</h1>
+  <div class="menu">
+    <div class="menu-item">
+      <h2>Chicken</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="menu-item">
+      <h2>Beef</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="menu-item">
+      <h2>Sushi</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</body>
+</html>
